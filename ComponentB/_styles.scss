@@ -1,0 +1,12 @@
+
+@mixin ComponentB($theme: ()) {
+    $theme: map-merge((
+        message-color: red,
+        content-padding: 1rem
+    ), $theme);
+
+    .container{
+        padding: map-get($theme, content-padding);
+        color: map-get($theme, message-color);
+    }
+}

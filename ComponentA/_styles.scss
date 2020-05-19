@@ -1,0 +1,11 @@
+
+
+@mixin ComponentA($theme: ()) {
+  $theme: map-merge((
+    message-color: red
+  ), $theme);
+
+  .message{
+    color: map-get($theme, message-color);
+  }
+}

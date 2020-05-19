@@ -1,0 +1,32 @@
+// $message-color: green;
+@import "./ComponentA/styles";
+@import "./ComponentB/styles";
+
+// импорт в корень
+@include ComponentA((
+    message-color: green
+));
+@include ComponentB((
+    message-color: yellow,
+    content-padding: 1.5rem
+));
+
+// Изолированые стили
+.scopeA-default{
+    @include ComponentA();
+}
+.scopeB-default{
+    @include ComponentB();
+}
+
+.scopeA-styled{
+    @include ComponentA((
+        message-color: violet
+    ));
+}
+.scopeB-styled{
+    // change one property
+    @include ComponentB((
+        content-padding: 2rem
+    ));
+}

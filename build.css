@@ -1,0 +1,26 @@
+.message {
+  color: green;
+}
+
+.container {
+  padding: 1.5rem;
+  color: yellow;
+}
+
+.scopeA-default .message {
+  color: red;
+}
+
+.scopeB-default .container {
+  padding: 1rem;
+  color: red;
+}
+
+.scopeA-styled .message {
+  color: violet;
+}
+
+.scopeB-styled .container {
+  padding: 2rem;
+  color: red;
+}
