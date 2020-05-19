@@ -1,4 +1,3 @@
-// $message-color: green;
 @import "./ComponentA/styles";
 @import "./ComponentB/styles";
 
@@ -25,7 +24,7 @@
     ));
 }
 .scopeB-styled{
-    // change one property
+    // изменение одного свойства
     @include ComponentB((
         content-padding: 2rem
     ));
