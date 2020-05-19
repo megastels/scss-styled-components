@@ -1,5 +1,6 @@
 .message {
   color: green;
+  font-size: 2rem;
 }
 
 .container {
@@ -9,6 +10,7 @@
 
 .scopeA-default .message {
   color: red;
+  font-size: 2rem;
 }
 
 .scopeB-default .container {
@@ -18,6 +20,7 @@
 
 .scopeA-styled .message {
   color: violet;
+  font-size: 2rem;
 }
 
 .scopeB-styled .container {

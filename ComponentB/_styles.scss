@@ -1,4 +1,3 @@
-
 @mixin ComponentB($theme: ()) {
     $theme: map-merge((
         message-color: red,

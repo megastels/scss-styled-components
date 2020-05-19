@@ -1,11 +1,12 @@
-
-
 @mixin ComponentA($theme: ()) {
   $theme: map-merge((
     message-color: red
   ), $theme);
 
+  $private-font-size: 2rem; 
+
   .message{
     color: map-get($theme, message-color);
+    font-size: $private-font-size;
   }
 }
